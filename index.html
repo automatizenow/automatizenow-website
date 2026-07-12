@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AutomatizeNow | Automatizaciones para Empresas</title>
+
+<meta name="description" content="AutomatizeNow desarrolla soluciones inteligentes de automatización e inteligencia artificial para empresas.">
+<meta name="theme-color" content="#080808">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="favicon.ico">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -13,12 +21,16 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Inter,sans-serif;
+font-family:'Inter',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
 
-height:100vh;
+min-height:100vh;
 
 display:flex;
 justify-content:center;
@@ -30,6 +42,10 @@ color:white;
 
 overflow:hidden;
 
+position:relative;
+
+padding:25px;
+
 }
 
 body::before{
@@ -38,8 +54,8 @@ content:"";
 
 position:absolute;
 
-width:700px;
-height:700px;
+width:750px;
+height:750px;
 
 background:radial-gradient(circle,#8B5CF6 0%,transparent 70%);
 
@@ -47,29 +63,35 @@ filter:blur(120px);
 
 opacity:.25;
 
+animation:pulse 8s ease-in-out infinite;
+
 }
 
 .container{
 
 position:relative;
 
+z-index:2;
+
 text-align:center;
 
-max-width:700px;
+max-width:760px;
 
 padding:40px;
 
-animation:fade 1.2s ease;
+animation:fade 1s ease;
 
 }
 
 .logo{
 
-font-size:64px;
+font-size:clamp(42px,8vw,68px);
 
 font-weight:700;
 
 letter-spacing:-2px;
+
+line-height:1;
 
 }
 
@@ -79,23 +101,11 @@ color:#8B5CF6;
 
 }
 
-.subtitle{
-
-margin-top:25px;
-
-font-size:22px;
-
-color:#d4d4d4;
-
-line-height:1.6;
-
-}
-
 .badge{
 
 display:inline-block;
 
-margin-top:40px;
+margin-top:35px;
 
 padding:10px 18px;
 
@@ -103,15 +113,31 @@ border:1px solid rgba(255,255,255,.15);
 
 border-radius:999px;
 
-background:rgba(255,255,255,.04);
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(12px);
+
+font-size:15px;
+
+}
+
+.subtitle{
+
+margin-top:28px;
+
+font-size:clamp(18px,2.8vw,23px);
+
+color:#d4d4d4;
+
+line-height:1.7;
 
 }
 
 .email{
 
-margin-top:35px;
+margin-top:38px;
 
-font-size:18px;
+font-size:clamp(17px,2.2vw,19px);
 
 }
 
@@ -120,6 +146,18 @@ font-size:18px;
 color:#8B5CF6;
 
 text-decoration:none;
+
+transition:.25s;
+
+font-weight:600;
+
+word-break:break-word;
+
+}
+
+.email a:hover{
+
+opacity:.8;
 
 }
 
@@ -153,6 +191,69 @@ transform:translateY(0);
 
 }
 
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+opacity:.22;
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+opacity:.32;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:.22;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+padding:10px;
+
+}
+
+.badge{
+
+font-size:14px;
+
+padding:8px 14px;
+
+}
+
+.footer{
+
+margin-top:45px;
+
+font-size:12px;
+
+}
+
+body::before{
+
+width:450px;
+height:450px;
+
+filter:blur(90px);
+
+}
+
+}
+
 </style>
 
 </head>
@@ -162,39 +263,26 @@ transform:translateY(0);
 <div class="container">
 
 <div class="logo">
-
 Automatize<span>Now</span>
-
 </div>
 
 <div class="badge">
-
 🚀 Próximamente
-
 </div>
 
 <div class="subtitle">
-
 Estamos construyendo una nueva generación de automatizaciones con Inteligencia Artificial para ayudar a las empresas a ahorrar tiempo, vender más y crecer.
-
 </div>
 
 <div class="email">
-
 📩
-
 <a href="mailto:automatizenow.team@gmail.com">
-
 automatizenow.team@gmail.com
-
 </a>
-
 </div>
 
 <div class="footer">
-
 © 2026 AutomatizeNow. Todos los derechos reservados.
-
 </div>
 
 </div>
