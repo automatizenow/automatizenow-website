@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /gracias.html
-
-# Sustituir por el dominio definitivo al publicar
-Sitemap: https://automatizenow.es/sitemap.xml
