@@ -23,14 +23,14 @@ import {
 } from "lucide-react";
 
 const ASSETS = {
-  logo: "/manus-storage/automatizenow-logo_261195a1.png",
-  hero: "/manus-storage/hero-visual_6acdb915.png",
-  network: "/manus-storage/network-visual_f2d88cc1.png",
-  chat: "/manus-storage/showcase-chat_0fdfe9d5.png",
-  dashboard: "/manus-storage/showcase-dashboard_4dc78ccb.png",
-  flow: "/manus-storage/showcase-flow_f072739d.png",
-  team: "/manus-storage/team-workflow_c076736c.jpg",
-  architecture: "/manus-storage/system-architecture_9068d45e.jpg",
+  logo: "/__manus__/automatizenow-logo_261195a1.png",
+  hero: "/__manus__/hero-visual_6acdb915.png",
+  network: "/__manus__/network-visual_f2d88cc1.png",
+  chat: "/__manus__/showcase-chat_0fdfe9d5.png",
+  dashboard: "/__manus__/showcase-dashboard_4dc78ccb.png",
+  flow: "/__manus__/showcase-flow_f072739d.png",
+  team: "/__manus__/team-workflow_c076736c.jpg",
+  architecture: "/__manus__/system-architecture_9068d45e.jpg",
 };
 
 const WHATSAPP_LINK = "https://wa.me/34690634014?text=Hola%20AutomatizeNow%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n";
